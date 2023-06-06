@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,100;1,300;1,400;1,900&display=swap');
+ 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: fixed;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+button{
+    color: black;
+}
+
+label{
+    color: gray;
+    text-align: left;
+    margin-top: 5px;
+}
+
+input{
+    color: black;
+    background-color: rgb(197, 193, 193);
+    border: none;
+    width: 43em;
+    outline: none;
+}
+
+#sub_btn {
+    color: black;
+    background-color: gray;
+    border: none;
+    width: 80px;
+    border-radius: 10px;
+    padding: 10px 5px;
+    outline: none;
+    margin-top: 5px;
+}
+
+.machine {
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    user-select: none;
+}
+
+.machine *{
+    position: absolute;
+}
+
+#heart {
+    bottom: 0;
+    left: 10;
+}
+
+#robot {
+    bottom: 0;
+    right: 0;
+    height: 50vh;
+}
+
+#time{
+    color: aqua;
+    left: 70px;
+    position: relative;
+
+}
+
+.in_middle{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: white;
+    padding: 10px 0px 10px 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10000;
+    width: 80vw;
+    height: 90vh;
+    overflow-y: scroll;
+}
+
+.in_middle *{
+    position: static;
+}
+
+.in_middle::-webkit-scrollbar{
+    display: block;
+}
+
+.in_middle::-webkit-scrollbar-track{
+   border-radius: 10px;
+}
+.in_middle::-webkit-scrollbar-thumb{
+   background-color: rgb(71, 61, 61);
+}
+
+.icon{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    padding: 3px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.cont *{
+    position: absolute;
+}
+
+.cont{
+    top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.battery{
+    top: 40px;
+    left: 50%;
+    width: 70px;
+    transform: translate(-50%);
+}
+.battery p{
+    align-items: center;
+    justify-content: center;
+    left: 130px;
+    color: aqua;
+}
+
+.clock{
+    width: 150px;
+    top: 40px;
+    
+}
+
+.internet{
+    top: 140px;
+    left: 10px;
+    width: 120px;
+}
+.internet p{
+    align-items: center;
+    justify-content: center;
+    left: 100px;
+    color: aqua;
+}
+
+.temp{
+    top: 10px;
+    right: 10px;
+    text-align: right;
+    font-size: smaller;
+    color: azure;
+}
+
+.temp *{
+    position: static;
+}
+
+.messages{
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    max-height: 600px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 15px;
+    z-index: 1000;
+}
+
+.messages::-webkit-scrollbar{
+    display: none;
+}
+
+.usermsg{
+    text-align: right;
+    width: 300px;
+    color: aquamarine;
+}
+
+.jmsg {
+    text-align: left;
+    margin-top: 5px;
+    width: 300px;
+    color: cornflowerblue;
+}
+
+.commands{
+    display: none;
+    background-color: white;
+}
+
+#start_jarvis_btn{
+    border: none;
+    outline: none;
+    position: fixed;
+    left: 400px;
+    transform: translateX(0);
+    top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#start_jarvis_btn p {
+  font-size: 25px;
+  left: 40px;
+  color: rgb(55, 169, 201);
+}
+#start_jarvis_btn img{
+    height: 200px;
+    left: 10px;
+
+}
+#stop_jarvis_btn {
+  border: none;
+  outline: none;
+  position: fixed;
+  left: 800px;
+  transform: translateX(0);
+  top: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  display: none;
+}
+
+#stop_jarvis_btn p {
+  font-size: 25px;
+  color: rgb(138, 148, 93);
+}
+
+#stop_jarvis_btn img {
+  height: 200px;
+  filter: blur(5px);
+  justify-content: center;
+  align-items: center;
+
+}
+
+.small_jarvis {
+  position: absolute;
+  top: calc(100vh - 370px);
+  left: calc(100vw - 370px);
+}
+
+.small_jarvis button {
+  background-color: black;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  bottom: 0;
+}
+.small_jarvis button p {
+  font-size: 20px;
+  color: rgb(14, 135, 241);
+  background-color: black;
+  margin-left: 40px;
+}
+
+.new_jarvis_window {
+  display: none;
+}
+
+@media (max-width: 300px) {
+  .hide_on_small {
+    display: none;
+  }
+  .new_jarvis_window {
+    display: block;
+  }
+  #start_jarvis_btn {
+    display: none;
+  }
+}

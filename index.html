@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K R I S H I</title>
+</head>
+
+<body>
+    <audio src="./Jarvis.mp3" id="j_intro"></audio>
+    <audio src="./power up.mp3" id="turn_on"></audio>
+   
+
+    <div class="machine hide_on_small">
+        <div class="clock cont">
+            <img src="https://freefrontend.com/assets/img/css-clocks/apple-watch-clock.gif" alt="time" class="icon"/>
+            <p id="time"></p>
+        </div>
+
+        <div class="internet cont">
+            <img src="https://media1.giphy.com/media/MaXOUjkV73aO4/200w.webp?cid=ecf05e47su2q7ftqxjhwu0uec0a080rdyjst2hk2wh6eixdo&ep=v1_gifs_search&rid=200w.webp&ct=g" alt="internet" class="icon">
+            <p id="internet"></p>
+        </div>
+
+        <div class="battery cont">
+            <img src="https://i.gifer.com/7yYb.gif" alt="battery" class="icon">
+            <p id="battery" ></p>
+        </div>
+        <div class="temp">
+            <p id="location"></p>
+            <p id="country"></p>
+            <p id="weatherT"></p>
+            <p id="weatherD"></p>
+            <img src="" id="weatherIcon"/>
+            <p id="oTemp"></p>
+            <p id="feelLikeTemp"></p>
+            <p id="minT"></p>
+            <p id="maxT"></p>
+        </div>
+
+    </div>
+
+    <button id="start_jarvis_btn" class="hide_on_small">
+        <img src="https://i.gifer.com/origin/43/434771e3bf841e79abb2d4da70d6b1e2.gif" alt="start">
+        <p>Start Recognition</p>
+</button>
+
+ <button id="stop_jarvis_btn" class="hide_on_small">
+      <img src="https://i.gifer.com/origin/43/434771e3bf841e79abb2d4da70d6b1e2.gif" alt="start jarvis" />
+      <p>Stop Recognition</p>
+    </button>
+
+     <div class="small_jarvis hide_on_small">
+      <button id="small_jarvis"><img src="https://i.gifer.com/3q63.gif"  height="200"><p>Make Me Small</p></button>
+    </div>
+
+
+
+    <div class="jarvis_setup in_middle hide_on_small">
+        <label id="">Your Name</label>
+        <input type="text">
+        <br>
+        <label id="">Your Gender</label>
+        <input type="text">
+        <br>
+        <label id="">Your Bio</label>
+        <input type="text">
+        <br>
+        <label id="">Your Location</label>
+        <input type="text">
+        <br>
+        <label id="">Your Email id</label>
+        <input type="text">
+        <br>
+        <label id="">Your Instagram Profile</label>
+        <input type="text">
+        <br>
+        <label id="">Your Github Profile</label>
+        <input type="text">
+        <br>
+       <button id="sub_btn">Submit</button>
+    </div>
+
+    <div class="commands in_middle hide_on_small"></div>
+
+    <div class="new_jarvis_window">
+      <img src="https://teds-jarvis.netlify.app/heart.gif" height="230" id="jarvis_start"/>
+    </div>
+
+
+    <!--script-->
+    <script src="./app.js"></script>
+    
+</body>
+</html>
